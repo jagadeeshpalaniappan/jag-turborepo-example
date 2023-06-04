@@ -5,6 +5,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/health", async (req, res) => {
+  res.json({ ok: true });
+});
+
 app.post(`/signup`, async (req, res) => {
   const { name, email, posts } = req.body;
 
