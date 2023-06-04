@@ -28,6 +28,10 @@
     },
     "clean": {
       "cache": false
-    }
+    },
+    "db:migrate:dev": {},
+    "db:migrate:deploy": {},
+    "db:push": {},
+    "db:seed": {}
   }
 }
